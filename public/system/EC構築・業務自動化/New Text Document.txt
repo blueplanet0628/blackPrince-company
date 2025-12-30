@@ -1,0 +1,26 @@
+title: EC構築・業務自動化
+
+ShopifyやWordPress等を活用し、EC・業務サイトの構築や業務自動化を支援。
+
+
+ShopifyやBASE、WordPressなどを活用し、クライアントのニーズに合わせたECサイトや業務用Webサイトの構築を行ってきました。ノーコード／ローコードツールに特化した開発で、短納期・低コストの実現に貢献しています。
+
+【対応実績】
+Shopify / MakeShop / BASE / STORES
+　└ ECサイトの立ち上げ、商品登録、送料・決済設定、テーマカスタマイズ
+
+EC-CUBE
+　└ プラグイン導入、デザイン調整、オリジナルテンプレート開発
+
+WordPress
+　└ コーポレートサイト、ランディングページ、ブログ型サイト構築（Elementorなど使用）
+
+【対応内容】
+ノーコード：テーマ構成、プラグイン連携、設定代行
+
+ローコード：HTML/CSS/JavaScriptによる軽微なカスタマイズ
+
+レスポンシブデザイン対応、画像制作、SEO初期対策も対応可
+
+【使用ツール・スキル】
+Shopify / BASE / MakeShop / STORES / EC-CUBE / WordPress / HTML / CSS / JS / Photoshop / Canva など
