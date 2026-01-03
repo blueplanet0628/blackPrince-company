@@ -16,7 +16,11 @@ function AnimatedDots() {
   return <span>{'.'.repeat(dotCount)}</span>
 }
 
-export default function ForcedLoader() {
+interface ForcedLoaderProps {
+  durationMs?: number
+}
+
+export default function ForcedLoader({ durationMs = 2000 }: ForcedLoaderProps) {
   const [isVisible, setIsVisible] = useState(true)
   const [isAnimatingOut, setIsAnimatingOut] = useState(false)
 
@@ -24,10 +28,10 @@ export default function ForcedLoader() {
     const timer = setTimeout(() => {
       setIsAnimatingOut(true)
       setTimeout(() => setIsVisible(false), 500)
-    }, 2000)
+    }, durationMs)
 
     return () => clearTimeout(timer)
-  }, [])
+  }, [durationMs])
 
   if (!isVisible) return null
 
