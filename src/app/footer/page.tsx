@@ -2,27 +2,46 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Mail, MessageCircle, Phone, ArrowRight } from "lucide-react"
 
 export default function Footer() {
   const links = [
     { href: "#home", label: "ホーム" },
-    { href: "#stats", label: "実績" },
-    { href: "#about", label: "BlackPrince株式会社について" },
-    { href: "#approach", label: "アプローチ" },
+    { href: "#why-choose-us", label: "選ばれる理由" },
+    { href: "#about", label: "会社について" },
     { href: "#performance", label: "パフォーマンス" },
-    { href: "#seo-sem", label: "SEO/SEM" },
-    { href: "#analytics", label: "アナリティクス" },
     { href: "#vision", label: "ビジョン" },
     { href: "#portfolio", label: "ポートフォリオ" },
     { href: "#testimonials", label: "お客様の声" },
-    { href: "#successful-projects", label: "システム制作実績" },
-    { href: "#why-choose-us", label: "選ばれる理由" },
+    { href: "#ceo", label: "About Us" },
     { href: "/policy", label: "利用規約", isExternal: false },
     { href: "/company", label: "会社概要", isExternal: false },
     { href: "/privacy", label: "個人情報保護方針", isExternal: false },
-    { href: "#price", label: "製作料金"},
-    { href: "#ceo", label: "代表者挨拶"},
-    { href: "#inquiry", label: "お問い合わせ"},
+    { href: "#inquiry", label: "お問い合わせ" },
+  ];
+
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "Email",
+      value: "closefriend0330@gmail.com",
+      link: "mailto:closefriend0330@gmail.com",
+      color: "from-teal-400 to-cyan-400",
+    },
+    {
+      icon: MessageCircle,
+      label: "LINE",
+      value: "hellosingapre",
+      link: "https://line.me/ti/p/~hellosingapre",
+      color: "from-green-400 to-emerald-400",
+    },
+    {
+      icon: Phone,
+      label: "WhatsApp",
+      value: "+81 70-9441-6496",
+      link: "https://wa.me/817094416496",
+      color: "from-emerald-400 to-teal-400",
+    },
   ];
 
   const handleSmoothScroll = (
@@ -41,19 +60,22 @@ export default function Footer() {
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    // else: let browser handle normal navigation
   };
 
   return (
-    <footer className="relative text-[#000] bg-[#f8f9fd]">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 py-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+    <footer className="relative bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
+      {/* Decorative top border */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-400" />
+      
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 py-16 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+          {/* Logo and Description */}
           <div>
             <div className="flex items-center gap-3">
-              <div className="h-12 md:h-20 flex items-center">
+              <div className="h-16 md:h-20 flex items-center">
                 <Image
                   src="/logo/logo.png"
-                  alt="ＢｌａｃｋＰｒｉｎｃｅ株式会社"
+                  alt="BlackPrince株式会社"
                   width={140}
                   height={80}
                   className="h-full w-auto object-contain"
@@ -61,76 +83,114 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="mt-4  text-sm leading-relaxed max-w-sm">
+            <p className="mt-6 text-slate-500 text-sm leading-relaxed max-w-sm">
               数ヶ月ではなく、数日でプロフェッショナルで使いやすいWebサイトを構築します。親切なサポート、明確なコミュニケーション、そして本当に大切な「ユーザー」に焦点を当てます。
             </p>
-            <div className="mt-6">
+            <div className="mt-8">
               <a
                 href="#home"
                 onClick={(e) => handleSmoothScroll(e, "#home")}
               >
-                <Button size="lg" className="bg-[#00c7f1] hover:bg-[#15aecb] text-white">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white rounded-full shadow-lg shadow-teal-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-teal-500/40 hover:scale-105"
+                >
                   今すぐ始める
+                  <ArrowRight className="ml-2" size={18} />
                 </Button>
               </a>
             </div>
           </div>
 
-          <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-6">
-            <div>
-              <h3 className="text-sm font-semibold tracking-wide ">ナビゲーション</h3>
-              <ul className="mt-4 space-y-3">
-                {links
-                  .slice(0, Math.ceil(links.length / 2))
-                  .map((l) => (
-                    <li key={l.href}>
-                      <a
-                        href={l.href}
-                        onClick={(e) => handleSmoothScroll(e, l.href, l.isExternal)}
-                        className="hover:text-[#00c7f1] transition-colors"
-                        target={l.isExternal ? "_blank" : undefined}
-                        rel={l.isExternal ? "noopener noreferrer" : undefined}
-                      >
-                        {l.label}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold tracking-wide ">その他</h3>
-              <ul className="mt-4 space-y-3">
-                {links
-                  .slice(Math.ceil(links.length / 2))
-                  .map((l) => (
-                    <li key={l.href}>
-                      <a
-                        href={l.href}
-                        onClick={(e) => handleSmoothScroll(e, l.href, l.isExternal)}
-                        className="hover:text-[#00c7f1] transition-colors"
-                        target={l.isExternal ? "_blank" : undefined}
-                        rel={l.isExternal ? "noopener noreferrer" : undefined}
-                      >
-                        {l.label}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-            <div className="col-span-2 sm:col-span-1">
-              <h3 className="text-sm font-semibold tracking-wide ">お問い合わせ</h3>
-              <ul className="mt-4 space-y-3 text-sm">
-                <li>メール: cbnbc08@gmail.com</li>
-                <li>営業時間: 月〜金 9:00–18:00（JST）</li>
-              </ul>
+          {/* Navigation Links */}
+          <div className="md:col-span-1">
+            <h3 className="text-sm font-bold tracking-wide text-teal-600 uppercase mb-6">
+              ナビゲーション
+            </h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-3">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    onClick={(e) => handleSmoothScroll(e, l.href, l.isExternal)}
+                    className="text-slate-500 hover:text-teal-600 transition-colors duration-300 text-sm"
+                    target={l.isExternal ? "_blank" : undefined}
+                    rel={l.isExternal ? "noopener noreferrer" : undefined}
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Information */}
+          <div>
+            <h3 className="text-sm font-bold tracking-wide text-teal-600 uppercase mb-6">
+              お問い合わせ
+            </h3>
+            <ul className="space-y-4">
+              {contactInfo.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-slate-500 hover:text-teal-600 transition-colors duration-300 group"
+                  >
+                    <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <item.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <span className="text-xs text-slate-400 block">{item.label}</span>
+                      <span className="text-sm font-medium">{item.value}</span>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            
+            {/* Business Hours */}
+            <div className="mt-6 pt-6 border-t border-slate-200">
+              <p className="text-slate-400 text-xs mb-2">営業時間</p>
+              <p className="text-slate-600 text-sm font-medium">月〜金 9:00–18:00（JST）</p>
             </div>
           </div>
         </div>
+
+        {/* Decorative divider */}
+        <div className="flex items-center justify-center gap-4 my-12">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+          <div className="flex gap-2">
+            <div className="w-2 h-2 rounded-full bg-teal-400" />
+            <div className="w-2 h-2 rounded-full bg-cyan-400" />
+            <div className="w-2 h-2 rounded-full bg-emerald-400" />
+          </div>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+        </div>
       </div>
-      <div className="mt-10 pb-6 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-4" style={{backgroundColor: "#284c88"}}>
-        <p className="text-white/100 text-sm">
-          © {new Date().getFullYear()} ＢｌａｃｋＰｒｉｎｃｅ株式会社
-        </p>
+
+      {/* Copyright bar */}
+      <div className="border-t border-slate-200 bg-white/50">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-sm">
+            © {new Date().getFullYear()} BlackPrince株式会社
+          </p>
+          <div className="flex items-center gap-6">
+            <a
+              href="/policy"
+              className="text-slate-400 hover:text-teal-600 text-xs transition-colors"
+            >
+              利用規約
+            </a>
+            <a
+              href="/privacy"
+              className="text-slate-400 hover:text-teal-600 text-xs transition-colors"
+            >
+              プライバシーポリシー
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

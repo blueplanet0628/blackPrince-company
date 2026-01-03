@@ -1,6 +1,6 @@
 "use client"
 
-import { Clock, Smartphone, Search, DollarSign, Heart, Users, MessageCircle } from "lucide-react"
+// Icons not currently used but may be needed for future features
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
@@ -88,25 +88,25 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <section ref={containerRef} className="py-16 sm:py-20 bg-white relative overflow-hidden">
-      <div className="absolute top-20 right-20 w-32 h-32 bg-blue-100 rounded-full opacity-30 floating-element" />
-      <div className="absolute bottom-20 left-20 w-24 h-24 bg-purple-100 rounded-full opacity-40 floating-element" />
-      <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-cyan-100 rounded-full opacity-25 floating-element" />
+    <section ref={containerRef} className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 relative overflow-hidden">
+      <div className="absolute top-20 right-20 w-64 h-64 bg-teal-100 rounded-full opacity-30 floating-element blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-48 h-48 bg-cyan-100 rounded-full opacity-40 floating-element blur-3xl" />
+      <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-emerald-100 rounded-full opacity-25 floating-element blur-3xl" />
 
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 relative">
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 relative z-10">
         <div ref={heroRef} className="flex flex-col items-center justify-center text-center mb-10">
-          <span className="inline-block rounded-full bg-[#00c7f1] px-4 py-2 text-sm font-bold text-white mb-2">
+          <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 px-4 py-2 text-sm font-bold text-white mb-4 shadow-lg shadow-teal-500/25">
             BlackPrince株式会社について
           </span>
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#00c7f1] mb-6 text-balance">
-            お互いの思いに寄り添い、素晴らしいプロジェクトを共に創り上げる会社。
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent mb-6 text-balance">
+            お互いの思いに寄り添い、<br className="hidden md:block" />素晴らしいプロジェクトを共に創り上げる会社。
           </h1>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="max-w-2xl">
-            <div ref={textBlockRef} className="border-2 border-blue-200 rounded-lg p-6 bg-white/80 backdrop-blur mb-8">
+            <div ref={textBlockRef} className="rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-sm border border-teal-100 shadow-sm mb-8">
               <p className="text-slate-700 mb-4 text-pretty">
                 <strong>ＢｌａｃｋＰｒｉｎｃｅ株式会社</strong>は10年以上にわたり多種多様なWebおよびシステム開発を手がけてきた開発会社です。企画・設計から開発、運用・保守までを一貫して支援し、お客様のビジネス課題や成長戦略に寄り添った最適なソリューションを提供しています。
               </p>

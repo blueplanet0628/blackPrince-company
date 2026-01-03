@@ -7,330 +7,236 @@ import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react"
 import Image from "next/image"
 
 const categories = [
-  "企業関連",
-  "不動産関連",
-  "教育関連",
-  "美容関連",
-  "医療関連",
-  "食品関連",
-  "EC関連",
-  "その他（ペット・アニメ）"
+  "Webサイト企画・制作実績",
+  "ECサイト構築・運営実績",
+  "Webアプリケーション・業務システム開発実績",
+  "CMS構築・カスタマイズ実績",
+  "UX / UI改善・リニューアル実績",
+  "運用・保守・継続支援実績"
 ]
 
 const projects = {
-  "企業関連": [
+  "Webサイト企画・制作実績": [
     {
       id: 1,
-      title: "Career Scouting",
-      image: "/advance.png",
-      url: "https://www.careerscout.co.jp/"
+      title: "TS-BASE｜EC・物流の課題をワンストップで解決するサービスサイト",
+      image: "/Webサイト企画・制作実績/1/1.png",
+      url: "https://www.ts-base.net/"
     },
     {
       id: 2,
-      title: "Haruchika",
-      image: "/haruchika.png",
-      url: "https://www.haruchika.co.jp/"
+      title: "PERSOL（パーソル）グループ – はたらいて、笑おう",
+      image: "/Webサイト企画・制作実績/2/Screenshot_1.png",
+      url: "https://www.persol-group.co.jp/"
     },
     {
       id: 3,
-      title: "funaisoken",
-      image: "/funai.png",
-      url: "https://www.funaisoken.co.jp/"
+      title: "人材派遣・人材紹介・アウトソーシングサービス",
+      image: "/Webサイト企画・制作実績/3/Screenshot_2.png",
+      url: "https://www.tcpartners.co.jp/"
     },
       {
       id: 4,
-      title: "nextlevelholdings",
-      image: "/nextlevel.png",
-      url: "https://nextlevelholdings.co.jp/"
+      title: "シナモンAI｜企業向けAIドキュメント解析・自動化ソリューション",
+      image: "/Webサイト企画・制作実績/4/Screenshot_1.png",
+      url: "https://cinnamon.ai/"
     },
       {
       id: 5,
-      title: "rewrite",
-      image: "/rewrite.png",
-      url: "https://www.rewrite.co.jp/"
+      title: "AI医療機器・医療AI技術開発企業",
+      image: "/Webサイト企画・制作実績/5/Screenshot_2.png",
+      url: "https://aillis.jp/"
     },
       {
       id: 6,
-      title: "Msols",
-      image: "/msol.png",
-      url: "https://www.msols.com/"
+      title: "ウルトラファインバブル搭載シャワーヘッド公式サイト",
+      image: "/Webサイト企画・制作実績/6/Screenshot_2.png",
+      url: "https://bollina.jp/"
     },
       {
       id: 7,
-      title: "Keywordmap",
-      image: "/keyword.png",
-      url: "https://keywordmap.jp/"
+      title: "オーガニックコスメ＆自然食品の通販サイト",
+      image: "/Webサイト企画・制作実績/7/Screenshot_1.png",
+      url: "https://www.mugigokoro.organic/"
     },
       {
       id: 8,
-      title: "Freelocation",
-      image: "/freelocation.png",
-      url: "https://freelocation.co.jp/"
+      title: "メンズ向けヘアケアブランド公式サイト",
+      image: "/Webサイト企画・制作実績/8/Screenshot_2.png",
+      url: "https://eightthethalasso-homme.jp/"
     },
       {
       id: 9,
-      title: "Recruit",
-      image: "/recruit.png",
-      url: "https://www.recruit-ms.co.jp/"
+      title: "レディースファッション通販サイト",
+      image: "/Webサイト企画・制作実績/9/Screenshot_1.png",
+      url: "https://palemoba.com/"
     },
       {
       id: 10,
-      title: "Famione",
-      image: "/famione.png",
-      url: "https://famione.com/benefit/"
-    },
-      {
-      id: 11,
-      title: "Pro-D-Use",
-      image: "/pro.png",
-      url: "https://pro-d-use.jp/"
-    },
+      title: "丸亀製麺（Marugame Seimen）",
+      image: "/Webサイト企画・制作実績/10/Screenshot_2.png",
+      url: "https://jp.marugame.com/"
+    }
   ],
-  "不動産関連": [
+  "ECサイト構築・運営実績": [
     {
       id: 12,
-      title: "Odakyu Group",
-      image: "/odakyu.png",
-      url: "https://www.odakyu.jp/group/brand/topic/"
+      title: "カラーミーショップ",
+      image: "/ECサイト構築・運営実績/1/Screenshot_1.png",
+      url: "https://shop-pro.jp/"
     },
     {
       id: 13,
-      title: "Kafuu Okinawa",
-      image: "/kafuu.png",
-      url: "https://www.kafuu-okinawa.jp/"
+      title: "ラミューズドレス",
+      image: "/ECサイト構築・運営実績/2/Screenshot_2.png",
+      url: "https://lamuse-dress.jp/"
     },
     {
       id: 14,
-      title: "N-Story",
-      image: "/n-story.png",
-      url: "https://www.n-story.net/　"
+      title: "ピープルツリー",
+      image: "/ECサイト構築・運営実績/3/Screenshot_1.png",
+      url: "https://peopletree.co.jp/　"
     },
     {
       id: 15,
-      title: "Temairazu",
-      image: "/tema.png",
-      url: "https://www.temairazu.com/"
+      title: "KARAKU by me（カラクバイミー）",
+      image: "/ECサイト構築・運営実績/4/Screenshot_2.png",
+      url: "https://karakubyme.com/ja"
     },
     {
       id: 16,
-      title: "Asahii Housing",
-      image: "/asahii.png",
-      url: "https://www.asahi-housing.co.jp/"
+      title: "BIZOUX（ビズー）",
+      image: "/ECサイト構築・運営実績/5/Screenshot_1.png",
+      url: "https://bizoux.jp/"
     },
     {
       id: 17,
-      title: "Open House",
-      image: "/openhouse.png",
-      url: "https://openhouse-group.com/"
+      title: "ジュエリー公式オンラインショップ",
+      image: "/ECサイト構築・運営実績/6/Screenshot_2.png",
+      url: "https://l-co-shop.jp/"
     },
     {
       id: 18,
-      title: "Tap",
-      image: "/tap.png",
-      url: "https://www.tap-ic.co.jp/"
+      title: "フラワーギフト＆ライフスタイル雑貨・オンラインショップ",
+      image: "/ECサイト構築・運営実績/8/Screenshot_2.png",
+      url: "https://karendo.com/"
     },
   ],
-  "教育関連": [
+  "Webアプリケーション・業務システム開発実績": [
     {
       id: 19,
-      title: "Andrew",
-      image: "/andrew.png",
-      url: "https://www.andrew.ac.jp"
+      title: "NDSインフォス",
+      image: "/Webアプリケーション・業務システム開発実績/1/Screenshot_1.png",
+      url: "https://www.nds-infos.co.jp/"
     },
     {
       id: 20,
-      title: "Online",
-      image: "/online.png",
-      url: "https://to-z.net/online/"
+      title: "CECの物流DXソリューション公式サイト",
+      image: "/Webアプリケーション・業務システム開発実績/2/Screenshot_2.png",
+      url: "https://logistics.cec-ltd.co.jp/"
     },
     {
       id: 21,
-      title: "School",
-      image: "/school.png",
-      url: "https://school.js88.com/"
+      title: "無料で使える予約管理・予約サイト",
+      image: "/Webアプリケーション・業務システム開発実績/3/Screenshot_1.png",
+      url: "https://reserva.be/"
     },
 
      {
       id:22,
-      title: "Ohtake",
-      image: "/ohtake.png",
-      url: "https://www.ohtake.ac.jp/"
+      title: "Cloud Brain 業務管理",
+      image: "/Webアプリケーション・業務システム開発実績/4/Screenshot_2.png",
+      url: "https://lp.report.cloud-brain.net/"
     },
      {
       id: 23,
-      title: "Seisa",
-      image: "/seisa.png",
-      url: "https://seisa.ac.jp/"
-    },
-     {
-      id: 24,
-      title: "Tanaka Soroban",
-      image: "/tanaka.png",
-      url: "https://tanakasorobanjuku.com/"
-    },
-     {
-      id: 25,
-      title: "Seigaku",
-      image: "/seigaku.png",
-      url: "https://seigaku.jp/kase/"
-    },
+      title: "Bカート（BCART）",
+      image: "/Webアプリケーション・業務システム開発実績/5/Screenshot_1.png",
+      url: "https://bcart.jp/"
+    }
   ],
-  "美容関連": [
+  "CMS構築・カスタマイズ実績": [
     {
       id: 26,
-      title: "Akiko",
-      image: "/akiko.png",
-      url: "https://e-akiko.com/lp/"
+      title: "形成外科・皮膚科・美容ひふ科クリニック公式サイ",
+      image: "/CMS構築・カスタマイズ実績/1/Screenshot_1.png",
+      url: "https://www.iki-clinic.com/"
     },
     {
       id: 27,
-      title: "Ethree",
-      image: "/yo.jpg",
-      url: "https://www.ethree.tokyo/" // This isnt the correct URL
+      title: "レディースホームクリニックやわた",
+      image: "/CMS構築・カスタマイズ実績/2/Screenshot_2.png",
+      url: "https://www.lhc-yawata.com/" // This isnt the correct URL
     },
     {
       id: 28,
-      title: "Top Class N",
-      image: "/yosecondd.jpg",
-      url: "https://topclass-n.net" // This isnt the correct URL
+      title: "そがセントラルクリニック",
+      image: "/CMS構築・カスタマイズ実績/3/Screenshot_1.png",
+      url: "https://www.soga-centralclinic.jp/" // This isnt the correct URL
     },
     {
       id: 29,
-      title: "Select",
-      image: "/select.png",
-      url: "https://u-select-up.com/"
+      title: "稲田朋美公式サイト",
+      image: "/CMS構築・カスタマイズ実績/4/Screenshot_2.png",
+      url: "https://www.inada-tomomi.com/"
     },
    
     {
       id: 30,
-      title: "Noluc",
-      image: "/yotwo.jpg",
-      url: "https://www.noluc.jp/" // This isnt the correct URL
+      title: "牧島かれん公式サイト",
+      image: "/CMS構築・カスタマイズ実績/5/Screenshot_1.png",
+      url: "https://makishimakaren.com/" // This isnt the correct URL
     },
     {
       id: 31,
-      title: "Bio Spa",
-      image: "/spa.png",
-      url: "https://bio-spa.jp/"
+      title: "KINS WITH 動物病院",
+      image: "/CMS構築・カスタマイズ実績/6/Screenshot_2.png",
+      url: "https://kinswith-vet.com/"
     }
-    // {
-    //   id: 32,
-    //   title: "Cellabo",
-    //   image: "/cellabo.png",
-    //   url: "https://www.celllabo.jp/"
-    // },
   ],
-  "医療関連": [
+  "UX / UI改善・リニューアル実績": [
     {
       id: 33,
-      title: "Futamatagawa Dental",
-      image: "/futa.png",
-      url: "https://futamatagawa-dental.com/"
+      title: "有限会社 宮崎製作所",
+      image: "/UX  UI改善・リニューアル実績/1/Screenshot_2.png",
+      url: "https://miyazaki-factory.com/"
     },
     {
       id: 34,
-      title: "Seed Recruit",
-      image: "/seed.png",
-      url: "https://www.seed-recruit.com/"
+      title: "ヒルトップリゾート福岡",
+      image: "/UX  UI改善・リニューアル実績/2/Screenshot_1.png",
+      url: "https://hilltopresort-fukuoka.com/"
     },
     {
       id: 35,
-      title: "Nakayama Kyousei",
-      image: "/nakayama.png",
-      url: "https://nakayama-kyousei.com/"
+      title: "三重・南伊勢町のオーシャンビューリゾートホテル公式サイト",
+      image: "/UX  UI改善・リニューアル実績/3/Screenshot_2.png",
+      url: "https://3373nankai.co.jp/"
     },
-    {
-      id: 36,
-      title: "Fujioka Dental",
-      image: "/fuji.png",
-      url: "https://fujioka-dental.jp/"
-    },
-    {
-      id: 37,
-      title: "Marina ",
-      image: "/marina.png",
-      url: "https://www.marina-dc.com/"
-    },
+    
   ],
-  "食品関連": [
+  "運用・保守・継続支援実績": [
     {
       id: 38,
-      title: "Shokubun",
-      image: "/shok.png",
-      url: "https://www.shokubun.co.jp/"
+      title: "アイムスデンタルクリニック",
+      image: "/運用・保守・継続支援実績/1/Screenshot_2.png",
+      url: "https://www.ims-dc-invisalign.com/"
     },
     {
       id: 39,
-      title: "Narikoma Group",
-      image: "/narikoma.png",
-      url: "https://www.narikoma-group.co.jp/corp/"
+      title: "医療・福祉の転職・求人情報サイト",
+      image: "/運用・保守・継続支援実績/2/Screenshot_1.png",
+      url: "https://www.co-medical.com/"
     },
     {
       id: 40,
-      title: "Heart Bread",
-      image: "/heart.png",
-      url: "https://www.heart-bread.com/"
+      title: "医療法人はるにれ",
+      image: "/運用・保守・継続支援実績/3/Screenshot_1.png",
+      url: "https://irryo-harunire.or.jp/"
     },
-    {
-      id: 41,
-      title: "Fujiya",
-      image: "/peko.png",
-      url: "https://www.fujiya-peko.co.jp"
-    },
+   
 
-  ],
-  "EC関連": [
-    {
-      id: 42,
-      title: "Marimo Craft",
-      image: "/craft.png",
-      url: "https://marimocraft.co.jp/"
-    },
-    {
-      id: 43,
-      title: "Rise",
-      image: "/rise.png",
-      url: "https://www.rise.sc/"
-    },
-    {
-      id: 44,
-      title: "Francfranc",
-      image: "/franc.png",
-      url: "https://francfranc.com/"
-    },
-  ],
-  "その他（ペット・アニメ）": [
-    {
-      id: 45,
-      title: "Ripuca",
-      image: "/ripuca.png",
-      url: "https://ripuca.co.jp/lp-instagram/"
-    },
-    {
-      id: 46,
-      title: "Hamaoka",  
-      image: "/hamao.png",
-      url: "https://hamaokamekki.co.jp/"
-    },
-    {
-      id: 47,
-      title: "DogHuggy",
-      image: "/dog.png",
-      url: "https://doghuggy.com/"
-    },
-    {
-      id: 48,
-      title: "Wanpass",
-      image: "/wanpass.png",
-      url: "https://wanpass.me/"
-    },
-    {
-      id: 49,
-      title: "Odakyu Group",
-      image: "/odakyu.png",
-      url: "https://www.odakyu.jp/group/brand/topic/"
-    },
-  ],
+  ]
 }
 
 gsap.registerPlugin(ScrollTrigger)
@@ -338,29 +244,12 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState(categories[0])
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [categoryStartIndex, setCategoryStartIndex] = useState(0)
   const projectsRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const categoriesRef = useRef<HTMLDivElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const [isMobileCatOpen, setIsMobileCatOpen] = useState(false)
   const mobileCatRef = useRef<HTMLDivElement>(null)
-
-  const [categoriesPerView, setCategoriesPerView] = useState(6)
-  useEffect(() => {
-    const updateCategoriesPerView = () => {
-      const w = window.innerWidth
-      const next = w <= 360 ? 1 : w <= 640 ? 3 : 6
-      setCategoriesPerView(next)
-      setCategoryStartIndex((prev) => {
-        const maxStart = Math.max(0, categories.length - next)
-        return Math.min(prev, maxStart)
-      })
-    }
-    updateCategoriesPerView()
-    window.addEventListener('resize', updateCategoriesPerView)
-    return () => window.removeEventListener('resize', updateCategoriesPerView)
-  }, [])
 
   useEffect(() => {
     if (!isMobileCatOpen) return
@@ -373,60 +262,8 @@ export default function Portfolio() {
     return () => document.removeEventListener('mousedown', onClick)
   }, [isMobileCatOpen])
 
-  const visibleCategories = categories.slice(categoryStartIndex, categoryStartIndex + categoriesPerView)
-
   const currentProjects = (projects[activeCategory as keyof typeof projects] || []) as { id: number; title: string; image: string; url?: string }[]
   const visibleProjects = currentProjects.slice(currentIndex, currentIndex + 6)
-
-  const handleCategoryPrevious = () => {
-    if (categoryStartIndex > 0) {
-      gsap.to(categoriesRef.current?.children || [], {
-        x: 50,
-        opacity: 0,
-        duration: 0.2,
-        stagger: 0.05,
-        onComplete: () => {
-          setCategoryStartIndex(categoryStartIndex - 1)
-          gsap.fromTo(
-            categoriesRef.current?.children || [],
-            { x: -50, opacity: 0 },
-            {
-              x: 0,
-              opacity: 1,
-              duration: 0.2,
-              stagger: 0.05,
-              ease: "power2.out",
-            }
-          )
-        },
-      })
-    }
-  }
-
-  const handleCategoryNext = () => {
-    if (categoryStartIndex + categoriesPerView < categories.length) {
-      gsap.to(categoriesRef.current?.children || [], {
-        x: -50,
-        opacity: 0,
-        duration: 0.2,
-        stagger: 0.05,
-        onComplete: () => {
-          setCategoryStartIndex(categoryStartIndex + 1)
-          gsap.fromTo(
-            categoriesRef.current?.children || [],
-            { x: 50, opacity: 0 },
-            {
-              x: 0,
-              opacity: 1,
-              duration: 0.2,
-              stagger: 0.05,
-              ease: "power2.out",
-            }
-          )
-        },
-      })
-    }
-  }
 
   const handleCategoryChange = (category: string) => {
     if (category === activeCategory) return
@@ -537,31 +374,30 @@ export default function Portfolio() {
 
   return (
     <section
-      className="min-h-[70vh] relative py-20 px-4"
+      className="min-h-[70vh] relative py-20 px-4 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800"
       ref={containerRef}
-      style={{
-        backgroundImage: "url('/S5.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed"
-      }}
     >
-      <div className="absolute inset-0  z-0"></div>
-      <div className="max mx-auto relative z-10">
-        <h2 ref={headerRef} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-10 sm:mb-16">制作実績(国内)</h2>
+      {/* Decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-teal-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-400/5 rounded-full blur-3xl" />
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <h2 ref={headerRef} className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6 bg-gradient-to-r from-teal-300 via-cyan-300 to-teal-300 bg-clip-text text-transparent">制作実績</h2>
+        <p className="text-slate-400 text-center mb-10 sm:mb-16 max-w-2xl mx-auto">多様な業種・規模のお客様にご依頼いただいた実績をご紹介します</p>
         <div className="xl:hidden mb-6 px-2">
           <div ref={mobileCatRef} className="relative max-w-md mx-auto">
             <button
               type="button"
               onClick={() => setIsMobileCatOpen((v) => !v)}
-              className="w-full flex items-center justify-between rounded-sm bg-[#345b95] text-white px-4 py-3 border border-white/20"
+              className="w-full flex items-center justify-between rounded-xl bg-white/10 backdrop-blur-sm text-white px-4 py-3 border border-white/20 hover:bg-white/15 transition-colors"
             >
               <span className="truncate">{activeCategory}</span>
               <ChevronDown size={18} className={`transition-transform ${isMobileCatOpen ? "rotate-180" : ""}`} />
             </button>
             {isMobileCatOpen && (
-              <div className="absolute mt-1 w-full max-h-64 overflow-auto rounded-sm bg-blue-700/90 backdrop-blur-sm border border-white/20 shadow-lg z-20">
+              <div className="absolute mt-2 w-full max-h-64 overflow-auto rounded-xl bg-slate-800/95 backdrop-blur-md border border-white/10 shadow-xl z-20">
                 {categories.map((category) => (
                   <button
                     key={category}
@@ -569,7 +405,7 @@ export default function Portfolio() {
                       setIsMobileCatOpen(false)
                       handleCategoryChange(category)
                     }}
-                    className={`w-full text-left px-4 py-3 text-white hover:bg-[#00c7f1] ${activeCategory === category ? "bg-[#00c7f1]" : ""}`}
+                    className={`w-full text-left px-4 py-3 text-white/80 hover:bg-teal-500/20 hover:text-white transition-colors ${activeCategory === category ? "bg-gradient-to-r from-teal-500/30 to-cyan-500/30 text-white" : ""}`}
                   >
                     {category}
                   </button>
@@ -579,45 +415,23 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="hidden xl:flex items-center justify-center mb-6 sm:mb-8 ">
-          <button
-            onClick={handleCategoryPrevious}
-            disabled={categoryStartIndex === 0}
-            className={`px-4 py-10 rounded-sm mr-1 transition-all duration-300 bg-[#345b95] ${
-              categoryStartIndex === 0
-                ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-[#00c7f1]"
-            }`}
-          >
-            <ChevronLeft size={24} className="text-[#00c7f1]" />
-          </button>
-          <div ref={categoriesRef} className="flex bg-blue-700/30 max-w-full xl:w-[1200px] rounded-sm overflow-hidden backdrop-blur-sm border border-white/20">
-            {visibleCategories.map((category, index) => (
-              <div className="w-full" key={category}>
+        <div className="hidden xl:flex items-center justify-center mb-6 sm:mb-8">
+          <div ref={categoriesRef} className="flex bg-white/5 max-w-full xl:w-[1400px] rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
+            {categories.map((category, index) => (
+              <div className="flex-1 min-w-0" key={category}>
                 <button
                   onClick={() => handleCategoryChange(category)}
-                  className={`w-full text-center px-4 sm:px-8 py-6 sm:py-10 text-sm sm:text-base font-medium transition-all duration-300 whitespace-nowrap ${
+                  className={`w-full h-full text-center px-2 sm:px-4 py-6 sm:py-8 text-xs sm:text-sm font-medium transition-all duration-300 leading-tight ${
                     activeCategory === category
-                      ? "bg-[#00c7f1] text-white"
-                      : "text-white hover:bg-[#00c7f1] bg-[#345b95]"
-                  } ${index !== visibleCategories.length - 1 ? "border-r border-[#013878]" : ""}`}
+                      ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-lg"
+                      : "text-white/70 hover:text-white hover:bg-white/10"
+                  } ${index !== categories.length - 1 ? "border-r border-white/10" : ""}`}
                 >
-                  {category}
+                  <span className="block break-words">{category}</span>
                 </button>
               </div>
             ))}
           </div>
-          <button
-            onClick={handleCategoryNext}
-            disabled={categoryStartIndex + categoriesPerView >= categories.length}
-            className={`px-4 py-10 rounded-sm ml-1 transition-all duration-300 bg-[#345b95] ${
-              categoryStartIndex + categoriesPerView >= categories.length
-                ? "opacity-50 cursor-not-allowed"
-                : ""
-            }`}
-          >
-            <ChevronRight size={24} className="text-[#00c7f1]" />
-          </button>
         </div>
 
         <div className="relative">
@@ -625,31 +439,31 @@ export default function Portfolio() {
             onClick={handlePrevious}
             disabled={currentIndex === 0}
             aria-label="Previous projects"
-            className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 p-3 rounded-sm transition-all  duration-300 bg-[#345b95] ${
-              currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "hover:bg-[#00c7f1]"
+            className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/20 ${
+              currentIndex === 0 ? "opacity-30 cursor-not-allowed" : "hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 hover:border-transparent"
             }`}
           >
-            <ChevronLeft size={24} className="text-[#00c7f1]" />
+            <ChevronLeft size={24} className="text-white" />
           </button>
 
           <button
             onClick={handleNext}
             disabled={currentIndex + 6 >= currentProjects.length}
             aria-label="Next projects"
-            className={`absolute right-2 top-1/2 -translate-y-1/2 z-20  p-3 rounded-sm transition-all duration-300 bg-[#345b95] ${
-              currentIndex + 6 >= currentProjects.length ? "opacity-50 cursor-not-allowed" : "hover:bg-[#00c7f1]"
+            className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/20 ${
+              currentIndex + 6 >= currentProjects.length ? "opacity-30 cursor-not-allowed" : "hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 hover:border-transparent"
             }`}
           >
-            <ChevronRight size={24} className="text-[#00c7f1]" />
+            <ChevronRight size={24} className="text-white" />
           </button>
 
           <div ref={projectsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mx-4 sm:mx-8 lg:mx-16">
             {visibleProjects.slice(0, 6).map((project) => (
               <div
                 key={project.id}
-                className=" rounded-sm overflow-hidden hover:transform hover:scale-105 transition-all duration-300 cursor-pointer group"
+                className="rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 hover:border-teal-500/30 hover:transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <div className="relative h-[300px] overflow-hidden">
+                <div className="relative h-[280px] overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
@@ -657,9 +471,10 @@ export default function Portfolio() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-white/90 line-clamp-2 mb-3">{project.title}</h3>
                   <button
                     type="button"
                     onClick={() => {
@@ -668,19 +483,22 @@ export default function Portfolio() {
                       }
                     }}
                     disabled={!project.url}
-                    className={`mt-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                      project.url ? "bg-white/30 text-white/70 hover:bg-[#00c7f1] hover:text-white" : "bg-white/30 text-white/70 cursor-not-allowed"
+                    className={`inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                      project.url 
+                        ? "bg-gradient-to-r from-teal-500/20 to-cyan-500/20 text-teal-300 border border-teal-500/30 hover:from-teal-500 hover:to-cyan-500 hover:text-white hover:border-transparent" 
+                        : "bg-white/10 text-white/40 cursor-not-allowed"
                     }`}
                     aria-label={`Visit ${project.title} website`}
                   >
                    サイトを見る
+                   <ChevronRight size={16} />
                   </button>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="flex justify-center mt-8 gap-2">
+          <div className="flex justify-center mt-10 gap-3">
             {Array.from({ length: Math.ceil(currentProjects.length / 6) }).map((_, index) => (
               <button
                 key={index}
@@ -709,8 +527,10 @@ export default function Portfolio() {
                     })
                   }
                 }}
-                className={`w-3 h-3 rounded-sm transition-all duration-300 ${
-                  Math.floor(currentIndex / 6) === index ? "border-2 border-cyan-400" : "bg-white/30 hover:bg-white/50"
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  Math.floor(currentIndex / 6) === index 
+                    ? "bg-gradient-to-r from-teal-400 to-cyan-400 scale-125" 
+                    : "bg-white/20 hover:bg-white/40"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
